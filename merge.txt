@@ -3,6 +3,7 @@ red
 green
 *************
 purple
+burgundy
 beige
 gold
 yellow 
