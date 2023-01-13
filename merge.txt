@@ -3,6 +3,9 @@ red
 green
 *************
 purple
+beige
+gold
+yellow 
 teal
 maroon
 silver
