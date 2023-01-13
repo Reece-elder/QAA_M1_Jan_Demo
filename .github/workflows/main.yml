@@ -3,12 +3,18 @@ name: GitHub Workflow Demo
 # Whenever a push is detected on this repo 
 on: [push]
 
+# In file global variables
+env: 
+  GLOBAL_VAR: Public to everything!
+
 # What do we want our workflow to do
 jobs:
   # Name of job 
   actions_demo:
     # What type of virtual machine do we want it to run on 
     runs-on: ubuntu-latest
+    env: 
+      COLOUR: Purple
     steps: 
     - run: echo "Hello World"
     - run: touch newfile.txt 
@@ -17,6 +23,8 @@ jobs:
     - run: ls
     - run: chmod +x buildScript.sh
     - run: ./buildScript.sh
+    - run: echo $GLOBAL_VAR
+    - run: echo $COLOUR
   
   second_job: 
     runs-on: ubuntu-latest
@@ -28,4 +36,5 @@ jobs:
     - run: ./scripts/script1.sh
     - run: chmod +x script2.sh
     - run: ./script2.sh
+    - run: echo $COLOUR
     
