@@ -24,8 +24,8 @@ jobs:
     - run: echo "Is this working"
     - uses: actions/checkout@v3
     - run: ls
-    - run: chmod +x script1.sh
-    - run: ./script1.sh
+    - run: chmod +x scripts/script1.sh
+    - run: ./scripts/script1.sh
     - run: chmod +x script2.sh
     - run: ./script2.sh
     
