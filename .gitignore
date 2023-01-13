@@ -1,0 +1,8 @@
+# Don't include password.txt in git add . 
+password.txt
+
+# Don't include any files that end in .txt
+*.txt
+
+# Do include info.txt
+!info.txt
