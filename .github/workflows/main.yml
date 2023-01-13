@@ -22,4 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - run: echo "Is this working"
+    - uses: actions/checkout@v3
+    - run: ls
     
