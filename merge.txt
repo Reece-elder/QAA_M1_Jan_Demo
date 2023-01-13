@@ -1,11 +1,12 @@
-I can just type straight away
+I can just type straight away!!!!
 red
-blue 
 green
+*************
 purple
-gold
-yellow 
+teal
+maroon
 silver
 
 blah blah blah
 
+print("Hello World")
