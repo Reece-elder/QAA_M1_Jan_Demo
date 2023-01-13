@@ -3,6 +3,7 @@ red
 blue 
 green
 purple
+burgundy
 gold
 yellow 
 silver
