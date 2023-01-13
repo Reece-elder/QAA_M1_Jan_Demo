@@ -6,6 +6,7 @@ on: [push]
 # In file global variables
 env: 
   GLOBAL_VAR: Public to everything!
+  PASSWORD: ${{ secrets.SECRET_PASSWORD }}
 
 # What do we want our workflow to do
 jobs:
@@ -25,6 +26,7 @@ jobs:
     - run: ./buildScript.sh
     - run: echo $GLOBAL_VAR
     - run: echo $COLOUR
+    - run: echo $PASSWORD
   
   second_job: 
     runs-on: ubuntu-latest
