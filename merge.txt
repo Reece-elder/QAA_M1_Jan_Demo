@@ -3,6 +3,7 @@ red
 blue 
 green
 purple
+beige
 gold
 yellow 
 silver
